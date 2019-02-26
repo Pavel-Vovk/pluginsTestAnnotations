@@ -1,9 +1,6 @@
 package com.electriccloud.plugins.annotations;
 
-import groovy.lang.Closure;
 import org.spockframework.runtime.extension.AbstractAnnotationDrivenExtension;
-import org.spockframework.runtime.extension.ExtensionException;
-import org.spockframework.runtime.extension.builtin.PreconditionContext;
 import org.spockframework.runtime.model.FeatureInfo;
 import org.spockframework.runtime.model.ISkippable;
 import org.spockframework.runtime.model.SpecInfo;

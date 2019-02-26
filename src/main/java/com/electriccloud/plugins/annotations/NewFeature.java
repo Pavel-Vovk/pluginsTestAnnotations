@@ -5,11 +5,10 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import groovy.lang.Closure;
 import org.spockframework.runtime.extension.ExtensionAnnotation;
 
 /**
- * Ignores the annotated spec for NewFeature in AUTOMATION_TESTS_CONTEXT_RUN
+ * Ignores the annotated spec for NewFeature in AUTOMATION_TESTS_CONTEXT_RUN regression
  * and values in PLUGIN_VERSION
  */
 
