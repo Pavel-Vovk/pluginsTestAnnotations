@@ -1,12 +1,34 @@
 # pluginsTestAnnotations
-@E2E - this annotation using for E2E tests
+The annotation works based on the two Environment Variables:
 
-@NewFeature(pluginVersion = "1.0.0") - this annotation using for New Feature tests for Plugin version 1.0.0
+AUTOMATION_TESTS_CONTEXT_RUN
 
-@Regression - this annotation using for Regression tests (no additional parameters)
+PLUGIN_VERSION
+## Using in code
 
-@Sanity - this annotation using for Sanity tests (no additional parameters)
-
+This is example an annotation using for E2E tests
+```Groovy
+@E2E
+def someE2ETest(){
+...
+when:
+...
+then
+...
+}
+```
+This is example an annotation using for New Feature tests in Plugin version 1.0.0 scope (Run the test just when )
+```Groovy
+@NewFeature(pluginVersion = "1.0.0")
+```
+This annotation using for Regression tests (no additional parameters)
+```Groovy
+@Regression
+```
+This annotation using for Sanity tests (no additional parameters)
+```Groovy
+@Sanity
+```
 Environment variables:
 
 AUTOMATION_TESTS_CONTEXT_RUN
