@@ -2,6 +2,7 @@
 This attentions for any Test on Spock Framework (groovy)
 Some Tests example located
 [here](https://github.com/Pavel-Vovk/pluginsTestAnnotations/blob/master/src/test/groovy/com/electriccloud/plugins/annotations/TestAnnotation.groovy)
+
 The annotations works based on the two Environment Variables:
 
 - AUTOMATION_TESTS_CONTEXT_RUN
