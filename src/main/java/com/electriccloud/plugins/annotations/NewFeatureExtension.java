@@ -22,7 +22,8 @@ public class NewFeatureExtension extends AbstractAnnotationDrivenExtension<NewFe
     private void doVisit(NewFeature annotation, ISkippable skippable) {
         String automationTestsContextRun = System.getenv("AUTOMATION_TESTS_CONTEXT_RUN");
         String pluginVersion = System.getenv("PLUGIN_VERSION");
-        if (!((automationTestsContextRun.contains("NewFeature") && (pluginVersion.contains(annotation.value())))||(automationTestsContextRun.contains("Regression")))){
+        //if (!((automationTestsContextRun.contains("NewFeature") && (pluginVersion.contains(annotation.value())))||(automationTestsContextRun.contains("Regression")))){
+        if (!((automationTestsContextRun.contains("NewFeature") && (pluginVersion.contains(annotation.pluginVersion())))||(automationTestsContextRun.contains("Regression")))){
             skippable.setSkipped(true);
         }
 

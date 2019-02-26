@@ -4,6 +4,8 @@ import com.electriccloud.plugins.annotations.*
 import spock.lang.Specification
 
 class TestAnnotation extends Specification{
+    static String version = "1.0.0"
+
     @Sanity
     def SanityTests (){
         when:
@@ -32,7 +34,8 @@ class TestAnnotation extends Specification{
         assert true
     }
 
-    @NewFeature("1.0.0")
+//    @NewFeature("1.0.0")
+    @NewFeature(pluginVersion = "1.0.0")
     def NewFeatureTests (){
         when:
         def var = 1
@@ -41,7 +44,8 @@ class TestAnnotation extends Specification{
         assert true
     }
 
-    @NewFeature("1.0.0")
+//    @NewFeature("1.0.0")
+    @NewFeature(pluginVersion = "1.0.0")
     @Regression
     def NewF_Reg (){
         when:
