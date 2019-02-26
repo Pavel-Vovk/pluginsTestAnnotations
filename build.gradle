@@ -1,0 +1,26 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'electriccloud'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+    maven {
+        url  "https://dl.bintray.com/ecpluginsdev/maven"
+    }}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.5:indy'
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile 'org.spockframework:spock-core:1.1-groovy-2.4-SNAPSHOT'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
