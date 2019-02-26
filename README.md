@@ -54,7 +54,7 @@ then
 }
 ```
 ## Environment variables
-
+### List
 - AUTOMATION_TESTS_CONTEXT_RUN
 
 - PLUGIN_VERSION
