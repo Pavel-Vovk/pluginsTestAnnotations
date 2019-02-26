@@ -3,13 +3,17 @@
 @E2E
 ```
 This annotation using for E2E tests
-
-@NewFeature(pluginVersion = "1.0.0") - this annotation using for New Feature tests for Plugin version 1.0.0
-
-@Regression - this annotation using for Regression tests (no additional parameters)
+```Groovy
+@NewFeature(pluginVersion = "1.0.0")
+```
+This annotation using for New Feature tests for Plugin version 1.0.0
+```Groovy
+@Regression
+```
+This annotation using for Regression tests (no additional parameters)
 
 @Sanity - this annotation using for Sanity tests (no additional parameters)
-
+```
 Environment variables:
 
 AUTOMATION_TESTS_CONTEXT_RUN
