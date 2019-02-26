@@ -59,7 +59,7 @@ then
 
 - PLUGIN_VERSION
 
-## Possible values
+### Possible values
 Use any one or all of them in any order
 ```Groovy
 AUTOMATION_TESTS_CONTEXT_RUN=E2E,Regression,Sanity
