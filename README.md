@@ -1,9 +1,9 @@
 # pluginsTestAnnotations
-The annotation works based on the two Environment Variables:
+The annotations works based on the two Environment Variables:
 
-AUTOMATION_TESTS_CONTEXT_RUN
+- AUTOMATION_TESTS_CONTEXT_RUN
 
-PLUGIN_VERSION
+- PLUGIN_VERSION
 ## Using in code
 
 This is example an annotation using for E2E tests
@@ -17,17 +17,31 @@ then
 ...
 }
 ```
-This is example an annotation using for New Feature tests in Plugin version 1.0.0 scope (Run the test just when )
+This is example an annotation using for New Feature tests in Plugin version 1.0.0 scope (Run the test just when the Plugin version equals to pluginVersion or when Regression declared in AUTOMATION_TESTS_CONTEXT_RUN)
 ```Groovy
-@NewFeature(pluginVersion = "1.0.0")
+@NewFeature(pluginVersion = "1.0.0")11
+def someNewFeatureTest(){
+...
+when:
+...
+then
+...
+}
 ```
-This annotation using for Regression tests (no additional parameters)
+This annotation using for Regression tests (no additional parameters, just declaration in AUTOMATION_TESTS_CONTEXT_RUN)
 ```Groovy
 @Regression
 ```
 This annotation using for Sanity tests (no additional parameters)
 ```Groovy
 @Sanity
+def someNewFeatureTest(){
+...
+when:
+...
+then
+...
+}
 ```
 Environment variables:
 
