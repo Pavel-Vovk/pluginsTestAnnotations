@@ -1,13 +1,13 @@
 # pluginsTestAnnotations
 @E2E - this annotation using for E2E tests
 
-@NewFeature("1.0.0") - this annotation using for New Freatuer tests for Plugin version 1.0.0
+@NewFeature(pluginVersion = "1.0.0") - this annotation using for New Feature tests for Plugin version 1.0.0
 
-@Regression - this annotation using for Regression tests
+@Regression - this annotation using for Regression tests (no additional parameters)
 
-@Sanity - this annotation using for Sanity tests
+@Sanity - this annotation using for Sanity tests (no additional parameters)
 
-Environamnet variables:
+Environment variables:
 
 AUTOMATION_TESTS_CONTEXT_RUN
 
