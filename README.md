@@ -42,9 +42,9 @@ then
 ...
 }
 ```
-This is example an annotation using for New Feature tests in Plugin version 1.0.0 scope (Run the test just when the Plugin version equals to pluginVersion or when Regression declared in AUTOMATION_TESTS_CONTEXT_RUN)
+This is example an annotation using for New Feature tests in Plugin version 1.2 scope (Run the test just when the Plugin version equals to pluginVersion or when Regression declared in AUTOMATION_TESTS_CONTEXT_RUN)
 ```Groovy
-@NewFeature(pluginVersion = "1.0.0")
+@NewFeature(pluginVersion = "1.2")
 def someNewFeatureTest(){
 ...
 when:
@@ -67,4 +67,5 @@ AUTOMATION_TESTS_CONTEXT_RUN=E2E,Regression,Sanity
 This variable should be exact corresponding to pluginVersion in @NewFeature
 ```Groovy
 PLUGIN_VERSION=1.2.3
+PLUGIN_VERSION=1.2
 ```
