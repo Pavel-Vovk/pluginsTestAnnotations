@@ -1,18 +1,19 @@
 # pluginsTestAnnotations
+This annotation using for E2E tests
 ```Groovy
 @E2E
 ```
-This annotation using for E2E tests
+This annotation using for New Feature tests for Plugin version 1.0.0
 ```Groovy
 @NewFeature(pluginVersion = "1.0.0")
 ```
-This annotation using for New Feature tests for Plugin version 1.0.0
+This annotation using for Regression tests (no additional parameters)
 ```Groovy
 @Regression
 ```
-This annotation using for Regression tests (no additional parameters)
-
-@Sanity - this annotation using for Sanity tests (no additional parameters)
+This annotation using for Sanity tests (no additional parameters)
+```Groovy
+@Sanity
 ```
 Environment variables:
 
