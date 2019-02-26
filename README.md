@@ -8,10 +8,15 @@
 @Sanity - this annotation using for Sanity tests
 
 Environamnet variables:
+
 AUTOMATION_TESTS_CONTEXT_RUN
+
 PLUGIN_VERSION
 
 Possible values:
+
 AUTOMATION_TESTS_CONTEXT_RUN
+
 AUTOMATION_TESTS_CONTEXT_RUN=E2E;Regression;Sanity (use any or all of the list)
+
 PLUGIN_VERSION=1.2.3
