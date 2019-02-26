@@ -40,18 +40,7 @@ class TestAnnotation extends Specification{
         when:
         def var = 1
         then:
-        println("This is New Feature with Plugin Version ")
-        assert true
-    }
-
-//    @NewFeature("1.0.0")
-    @NewFeature(pluginVersion = "1.0.0")
-    @Regression
-    def NewF_Reg (){
-        when:
-        def var = 1
-        then:
-        println("This is New Feature with Plugin Version or regression ")
+        println("This is New Feature with Plugin Version or Regression")
         assert true
     }
 }
