@@ -5,7 +5,7 @@ The annotations works based on the two Environment Variables:
 
 - PLUGIN_VERSION
 ## Using in code
-This is example an annotation using for Sanity tests
+This is example an annotation using for Sanity tests (no additional parameters, just declaration in AUTOMATION_TESTS_CONTEXT_RUN env var)
 ```Groovy
 @Sanity
 def someSanityTest(){
@@ -16,7 +16,7 @@ then
 ...
 }
 ```
-This is example an annotation using for E2E tests
+This is example an annotation using for E2E tests (no additional parameters, just declaration in AUTOMATION_TESTS_CONTEXT_RUN env var)
 ```Groovy
 @E2E
 def someE2ETest(){
@@ -27,7 +27,7 @@ then
 ...
 }
 ```
-This annotation using for Regression tests (no additional parameters, just declaration in AUTOMATION_TESTS_CONTEXT_RUN)
+This annotation using for Regression tests (no additional parameters, just declaration in AUTOMATION_TESTS_CONTEXT_RUN env var)
 ```Groovy
 @Regression
 def someRegressionTest(){
