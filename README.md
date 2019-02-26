@@ -1,5 +1,5 @@
 # pluginsTestAnnotations
-This attentions for any Test on Spock Framework (groovy)
+This attentions for any Test on Spock Framework (groovy).
 Some Tests example located
 [here](https://github.com/Pavel-Vovk/pluginsTestAnnotations/blob/master/src/test/groovy/com/electriccloud/plugins/annotations/TestAnnotation.groovy)
 
