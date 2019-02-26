@@ -1,5 +1,8 @@
 # pluginsTestAnnotations
-@E2E - this annotation using for E2E tests
+```Groovy
+@E2E
+```
+This annotation using for E2E tests
 
 @NewFeature(pluginVersion = "1.0.0") - this annotation using for New Feature tests for Plugin version 1.0.0
 
