@@ -56,9 +56,11 @@ then
 - PLUGIN_VERSION
 
 ## Possible values:
+Use any one or all of them in any order
 ```Groovy
-AUTOMATION_TESTS_CONTEXT_RUN=E2E;Regression;Sanity (use any or all of them)
+AUTOMATION_TESTS_CONTEXT_RUN=E2E,Regression,Sanity
 ```
+This variable should be exact corresponding to pluginVersion in @NewFeature(pluginVersion = "1.2.3")
 ```Groovy
 PLUGIN_VERSION=1.2.3
 ```
