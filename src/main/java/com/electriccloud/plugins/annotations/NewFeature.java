@@ -17,5 +17,5 @@ import org.spockframework.runtime.extension.ExtensionAnnotation;
 @ExtensionAnnotation(NewFeatureExtension.class)
 public @interface NewFeature {
    //String value() default "";
-    String pluginVersion() default "[not defined]";
+    String pluginVersion() default "[unassigned]";
 }
