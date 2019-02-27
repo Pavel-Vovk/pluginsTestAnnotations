@@ -62,7 +62,7 @@ then
 ### Possible values
 Use any one or all of them in any order
 ```Groovy
-AUTOMATION_TESTS_CONTEXT_RUN=E2E,Regression,Sanity
+AUTOMATION_TESTS_CONTEXT_RUN=Sanity;E2E;Regression
 ```
 This variable should be exact corresponding to pluginVersion in @NewFeature
 ```Groovy
